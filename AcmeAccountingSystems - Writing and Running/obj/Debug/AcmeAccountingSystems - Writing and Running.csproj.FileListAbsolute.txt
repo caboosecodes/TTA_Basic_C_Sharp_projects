@@ -1,0 +1,7 @@
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AcmeAccountingSystems - Writing and Running\obj\Debug\AcmeAccountingSystems - Writing and Running.csproj.AssemblyReference.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AcmeAccountingSystems - Writing and Running\obj\Debug\AcmeAccountingSystems - Writing and Running.csproj.CoreCompileInputs.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AcmeAccountingSystems - Writing and Running\bin\Debug\AcmeAccountingSystems - Writing and Running.exe.config
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AcmeAccountingSystems - Writing and Running\bin\Debug\AcmeAccountingSystems - Writing and Running.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AcmeAccountingSystems - Writing and Running\bin\Debug\AcmeAccountingSystems - Writing and Running.pdb
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AcmeAccountingSystems - Writing and Running\obj\Debug\AcmeAccountingSystems - Writing and Running.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AcmeAccountingSystems - Writing and Running\obj\Debug\AcmeAccountingSystems - Writing and Running.pdb
