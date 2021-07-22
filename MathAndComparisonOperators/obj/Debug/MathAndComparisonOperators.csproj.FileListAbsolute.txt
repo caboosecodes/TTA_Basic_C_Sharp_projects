@@ -1,0 +1,7 @@
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\MathAndComparisonOperators\bin\Debug\MathAndComparisonOperators.exe.config
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\MathAndComparisonOperators\bin\Debug\MathAndComparisonOperators.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\MathAndComparisonOperators\bin\Debug\MathAndComparisonOperators.pdb
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\MathAndComparisonOperators\obj\Debug\MathAndComparisonOperators.csproj.AssemblyReference.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\MathAndComparisonOperators\obj\Debug\MathAndComparisonOperators.csproj.CoreCompileInputs.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\MathAndComparisonOperators\obj\Debug\MathAndComparisonOperators.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\MathAndComparisonOperators\obj\Debug\MathAndComparisonOperators.pdb
