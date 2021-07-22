@@ -29,7 +29,34 @@ namespace VariablesAndDataTypes
             //Console.ReadLine();
 
             bool isStudying = false;
-            byte hoursworked = 42
+            byte hoursworked = 42; // 0-255
+            sbyte currentTemperature = -23; // like byte but allows negative numbers
+            char questionMark = '\u2103'; // single quotes for single character 
+
+            decimal moneyInBank = 10.5m; // m does not stand for million, needed when writing decimal; only used for finacial transaction
+
+            double heightInCentimeters = 211.30202092; //15-16 digits in lenght can have decimal points
+
+            float secondsLeft = 2.92f; // 7 digits in length; f for float
+
+            short temperatureOnMars = -341; // -320000 - 320000
+
+            string myName = "Ricky";
+
+            // convert interger to a string
+            int currentage = 30;
+            string yearsOld = currentage.ToString();
+
+            // convert boolean to string
+            bool isRaining = true;
+            string rainingStatus = Convert.ToString(isRaining);
+            
+            // Best to avoid casting; design your program to avoid constantly having to convert values
+            Console.WriteLine(rainingStatus);
+            Console.ReadLine();
+
+
+
             
         }
     }
