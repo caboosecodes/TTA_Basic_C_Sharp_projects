@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Branching Submission Assignemnt for the Tech Academy
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +20,7 @@ namespace BranchingAssignment
             int packageWeight = Convert.ToInt32(Console.ReadLine());
 
             // nested branching statements
-            if (packageWeight < 50)
+            if (packageWeight < 51)
             {
                 // asks the user for the dimensions of the package
                 Console.WriteLine("Please enter the package width");
@@ -30,7 +32,7 @@ namespace BranchingAssignment
                 int totalDimensions = width + height + length;
                 
                 // nested if statement to check if the sum of the dimensions is less than 50
-                if (totalDimensions < 50)
+                if (totalDimensions < 51)
                 {
                     int quote = ((width * height * length) * packageWeight) / 100;
                     Console.WriteLine("Your estimated total for shipping this package is: $" + quote + "\nThank you!");
