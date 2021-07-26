@@ -1,0 +1,7 @@
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\Loops\bin\Debug\Loops.exe.config
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\Loops\bin\Debug\Loops.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\Loops\bin\Debug\Loops.pdb
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\Loops\obj\Debug\Loops.csproj.AssemblyReference.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\Loops\obj\Debug\Loops.csproj.CoreCompileInputs.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\Loops\obj\Debug\Loops.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\Loops\obj\Debug\Loops.pdb

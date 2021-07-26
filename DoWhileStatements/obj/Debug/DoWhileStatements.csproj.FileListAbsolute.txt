@@ -1,0 +1,7 @@
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\DoWhileStatements\bin\Debug\DoWhileStatements.exe.config
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\DoWhileStatements\bin\Debug\DoWhileStatements.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\DoWhileStatements\bin\Debug\DoWhileStatements.pdb
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\DoWhileStatements\obj\Debug\DoWhileStatements.csproj.AssemblyReference.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\DoWhileStatements\obj\Debug\DoWhileStatements.csproj.CoreCompileInputs.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\DoWhileStatements\obj\Debug\DoWhileStatements.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\DoWhileStatements\obj\Debug\DoWhileStatements.pdb
