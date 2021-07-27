@@ -1,0 +1,7 @@
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArraysAndLists\bin\Debug\ArraysAndLists.exe.config
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArraysAndLists\bin\Debug\ArraysAndLists.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArraysAndLists\bin\Debug\ArraysAndLists.pdb
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArraysAndLists\obj\Debug\ArraysAndLists.csproj.AssemblyReference.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArraysAndLists\obj\Debug\ArraysAndLists.csproj.CoreCompileInputs.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArraysAndLists\obj\Debug\ArraysAndLists.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArraysAndLists\obj\Debug\ArraysAndLists.pdb
