@@ -1,0 +1,7 @@
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArrayListsAssignment\bin\Debug\ArrayListsAssignment.exe.config
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArrayListsAssignment\bin\Debug\ArrayListsAssignment.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArrayListsAssignment\bin\Debug\ArrayListsAssignment.pdb
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArrayListsAssignment\obj\Debug\ArrayListsAssignment.csproj.AssemblyReference.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArrayListsAssignment\obj\Debug\ArrayListsAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArrayListsAssignment\obj\Debug\ArrayListsAssignment.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArrayListsAssignment\obj\Debug\ArrayListsAssignment.pdb
