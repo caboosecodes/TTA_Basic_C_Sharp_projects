@@ -1,0 +1,7 @@
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArrayIterationAssignemnt\obj\Debug\ArrayIterationAssignemnt.csproj.AssemblyReference.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArrayIterationAssignemnt\obj\Debug\ArrayIterationAssignemnt.csproj.CoreCompileInputs.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArrayIterationAssignemnt\bin\Debug\ArrayIterationAssignemnt.exe.config
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArrayIterationAssignemnt\bin\Debug\ArrayIterationAssignemnt.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArrayIterationAssignemnt\bin\Debug\ArrayIterationAssignemnt.pdb
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArrayIterationAssignemnt\obj\Debug\ArrayIterationAssignemnt.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ArrayIterationAssignemnt\obj\Debug\ArrayIterationAssignemnt.pdb
