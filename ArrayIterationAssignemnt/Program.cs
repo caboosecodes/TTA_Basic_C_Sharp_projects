@@ -71,6 +71,7 @@ namespace ArrayIterationAssignemnt
 
             // initialize a list
             List<string> pets = new List<string>();
+            // populate list with strings
             pets.Add("dog");
             pets.Add("cat");
             pets.Add("bird");
@@ -79,17 +80,23 @@ namespace ArrayIterationAssignemnt
             pets.Add("turtle");
             pets.Add("snake");
 
+            // asks user to input a pet
             Console.WriteLine("Please guess a pet, for example: dog");
             string userPet = Console.ReadLine();
+            // checks to see if userPet in the list pets; Contains() returns a true or false
             bool isPetPresent = pets.Contains(userPet);
 
+            
             if (isPetPresent == true)
             {
+                // if the user's pet is present in the list then find the index
                 int index = pets.FindIndex(z => z.Contains(userPet));
+                // prints response containing the user's guess and index of that guess
                 Console.WriteLine("Your guess of " + userPet + " was on the list at the index of: " + index);
             }
             else
             {
+                // prints if the pet was not on the list
                 Console.WriteLine("Sorry that pet was not on the list");
             }
 
