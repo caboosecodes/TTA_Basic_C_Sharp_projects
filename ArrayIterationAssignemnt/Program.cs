@@ -31,48 +31,77 @@ namespace ArrayIterationAssignemnt
             //}
 
 
-            // Part Two: Infinite Loop
+            //// Part Two: Infinite Loop
 
-            // x variable stores data type integer
-            int x = 0;
-            while (x < 10)
-            {
-                Console.WriteLine("Without incrementing x this will print indefinitely");
-                // Need to add the increment to prevent infinite loop
-                // to x++ where the value will be used then incremented as opposed ++x will increment then use the value
-                x++;
-            }
+            //// x variable stores data type integer
+            //int x = 0;
+            //while (x < 10)
+            //{
+            //    Console.WriteLine("Without incrementing x this will print indefinitely");
+            //    // Need to add the increment to prevent infinite loop
+            //    // to x++ where the value will be used then incremented as opposed ++x will increment then use the value
+            //    x++;
+            //}
 
 
-            // Part Three: Iterating using "<" and "<=" operator 
+            //// Part Three: Iterating using "<" and "<=" operator 
             
-            // intializing integer variables
-            int a = 0;
-            int b = 0;
+            //// intializing integer variables
+            //int a = 0;
+            //int b = 0;
             
-            // while loop using < operator
-            while (a < 5)
+            //// while loop using < operator
+            //while (a < 5)
+            //{
+            //    //prints the value of a to the terminal
+            //    Console.WriteLine(a);
+            //    //increments a by 1
+            //    a++;
+            //}
+            //// while loop using <= operator
+            //while (b <= 5)
+            //{
+            //    // prints the value of b to the terminal
+            //    Console.WriteLine(b);
+            //    // increments b by 1
+            //    b++;
+            //}
+
+            // Part Four: displaying the index
+
+            // initialize a list
+            List<string> pets = new List<string>();
+            pets.Add("dog");
+            pets.Add("cat");
+            pets.Add("bird");
+            pets.Add("snake");
+            pets.Add("fish");
+            pets.Add("turtle");
+            pets.Add("snake");
+
+            Console.WriteLine("Please guess a pet, for example: dog");
+            string userPet = Console.ReadLine();
+            bool isPetPresent = pets.Contains(userPet);
+
+            if (isPetPresent == true)
             {
-                //prints the value of a to the terminal
-                Console.WriteLine(a);
-                //increments a by 1
-                a++;
+                int index = pets.FindIndex(z => z.Contains(userPet));
+                Console.WriteLine("Your guess of " + userPet + " was on the list at the index of: " + index);
             }
-            // while loop using <= operator
-            while (b <= 5)
+            else
             {
-                // prints the value of b to the terminal
-                Console.WriteLine(b);
-                // increments b by 1
-                b++;
+                Console.WriteLine("Sorry that pet was not on the list");
             }
+
+
+
+
+
+
+
 
 
             Console.ReadLine();
-
-
-
-
 
 
             //// array of integers
