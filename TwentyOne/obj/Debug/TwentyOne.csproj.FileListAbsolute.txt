@@ -1,0 +1,7 @@
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\TwentyOne\bin\Debug\TwentyOne.exe.config
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\TwentyOne\bin\Debug\TwentyOne.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\TwentyOne\bin\Debug\TwentyOne.pdb
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\TwentyOne\obj\Debug\TwentyOne.csproj.AssemblyReference.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\TwentyOne\obj\Debug\TwentyOne.csproj.CoreCompileInputs.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\TwentyOne\obj\Debug\TwentyOne.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\TwentyOne\obj\Debug\TwentyOne.pdb
