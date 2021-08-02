@@ -8,21 +8,32 @@ namespace MainMethodAssignment
 {
     class MathMethods
     {
-        public static int Math(int userNumber)
+        // Overloading Methods
+        
+        // Method takes in an integer
+        public static int RepeatMethod(int userNumber)
         {
+            // adds 10
             int result = userNumber + 10;
+            //returns the result
             return result;
         }
 
-        public static float Math(float userFloat)
+        // Method takes in a float
+        public static float RepeatMethod(float userFloat)
         {
-            float result = userFloat;
+            // divides by 5
+            float result = userFloat/5;
+            // returns the result
             return result;
         }
 
-        public static int Math(string userString)
+        // Method takes in a float and returns an integer
+        public static int RepeatMethod(string userString)
         {
+            // converts a string to integer
             int result = Convert.ToInt32(userString);
+            // returns the result
             return result;
         }
     }
