@@ -10,6 +10,10 @@ namespace MainMethodAssignment
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Please input a whole number");
+            int userNumber = Convert.ToInt32(Console.ReadLine());
+
+
         }
     }
 }
