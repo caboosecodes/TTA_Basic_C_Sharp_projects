@@ -42,15 +42,20 @@ namespace TwentyOne
             // Deck is the datatype
             // deck is the variable
             Deck deck = new Deck();
-            
+
+            int timesShuffled = 0;
+
             // call the method
-            deck = Shuffle(deck);
+            //deck = Shuffle(deck);
+            // you can add the named parameter to make it more readable
+            deck = Shuffle(deck: deck, out timesShuffled, times: 3);
 
             foreach (Card card in deck.Cards)
             {
                 Console.WriteLine(card.Face + " of " + card.Suit);
             }
             Console.WriteLine(deck.Cards.Count);
+            Console.WriteLine("Times Shuffled: {0}", timesShuffled);
             Console.ReadLine();
         }
 
@@ -62,32 +67,56 @@ namespace TwentyOne
         // Deck is the datatype it is returning
         // Shuffle is the name of the function
         // takes a parameter of type: Deck and variable name: deck
-        public static Deck Shuffle(Deck deck)
+        
+        // instead of overloading a method you can make the times parameter optional
+        // by setting a default value of one you create a OPTIONAL VALUE
+
+        // an out parameter
+        // has to go before any optional parameter
+        public static Deck Shuffle(Deck deck, out int timesShuffled, int times = 1)
         {
-            // to store our shuffled item 
-            List<Card> tempList = new List<Card>();
-
-            // shuffling is supposed to be random
-            // random class from the framework class library
-            Random random = new Random();
-            
-            
-            while (deck.Cards.Count > 0)
+            timesShuffled = 0;
+            for (int i = 0; i < times; i++)
             {
-                // selects a random card from the index of deck
-                int randomIndex = random.Next(0, deck.Cards.Count);
-                // places that random card in the tempList
-                tempList.Add(deck.Cards[randomIndex]);
-                // removes that card from deck list
-                // RemoveAt is a function of the List type
-                deck.Cards.RemoveAt(randomIndex);
-            }
-            // sets the empty deck equal to the tempList
-            deck.Cards = tempList;
-            return deck;
+                // on each loop timesShuffled will increment
+                timesShuffled++;
+                // to store our shuffled item 
+                List<Card> tempList = new List<Card>();
 
+                // shuffling is supposed to be random
+                // random class from the framework class library
+                Random random = new Random();
+
+
+                while (deck.Cards.Count > 0)
+                {
+                    // selects a random card from the index of deck
+                    int randomIndex = random.Next(0, deck.Cards.Count);
+                    // places that random card in the tempList
+                    tempList.Add(deck.Cards[randomIndex]);
+                    // removes that card from deck list
+                    // RemoveAt is a function of the List type
+                    deck.Cards.RemoveAt(randomIndex);
+                }
+                // sets the empty deck equal to the tempList
+                deck.Cards = tempList;
+            }
+            return deck;
         }
 
+        //public static Deck Shuffle(Deck deck, int times)
+        //{
+        //    for (int i = 0; i < times; i++)
+        //    {
+        //        deck = Shuffle(deck);
 
+        //    }
+        //    return deck;
+        //}
     }
 }
+
+// Method overloading
+// C# allows methods that all have the same number as long as each method is "kinda different"
+// the compiler has specific rules on which method to use but if it get confused it gives an error
+// 
