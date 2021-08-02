@@ -29,7 +29,7 @@ namespace TwoParameters
                 result = Optional.Two(num1, num2);
                 Console.WriteLine("{0} minus {1} equals {2}", num1, num2, result);
             }
-            // if ther user doesn't input a number
+            // if the user doesn't input a number
             else
             {
                 // it only passes the first number as the parameter
