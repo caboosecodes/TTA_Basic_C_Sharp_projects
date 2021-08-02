@@ -49,5 +49,34 @@ namespace TwentyOne
 
         // a deck is a collection of cards
         public List<Card> Cards { get; set; }
+
+        // static allows a method without it applying to the object
+        // void 
+        public void Shuffle(int times = 1)
+        {
+            
+            for (int i = 0; i < times; i++)
+            {
+                // to store our shuffled item 
+                List<Card> tempList = new List<Card>();
+
+                // shuffling is supposed to be random
+                // random class from the framework class library
+                Random random = new Random();
+
+                while (Cards.Count > 0)
+                {
+                    // selects a random card from the index of deck
+                    int randomIndex = random.Next(0, Cards.Count);
+                    // places that random card in the tempList
+                    tempList.Add(Cards[randomIndex]);
+                    // removes that card from deck list
+                    // RemoveAt is a function of the List type
+                    Cards.RemoveAt(randomIndex);
+                }
+                // sets the empty deck equal to the tempList
+                Cards = tempList;
+            }
+        }
     }
 }

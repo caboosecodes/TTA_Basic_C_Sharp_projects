@@ -43,19 +43,20 @@ namespace TwentyOne
             // deck is the variable
             Deck deck = new Deck();
 
-            int timesShuffled = 0;
 
             // call the method
             //deck = Shuffle(deck);
             // you can add the named parameter to make it more readable
-            deck = Shuffle(deck: deck, out timesShuffled, times: 3);
+            //deck = Shuffle(deck: deck, out timesShuffled, times: 3);
+
+            //instead of writing the above write:
+            deck.Shuffle(3);
 
             foreach (Card card in deck.Cards)
             {
                 Console.WriteLine(card.Face + " of " + card.Suit);
             }
             Console.WriteLine(deck.Cards.Count);
-            Console.WriteLine("Times Shuffled: {0}", timesShuffled);
             Console.ReadLine();
         }
 
@@ -73,36 +74,7 @@ namespace TwentyOne
 
         // an out parameter
         // has to go before any optional parameter
-        public static Deck Shuffle(Deck deck, out int timesShuffled, int times = 1)
-        {
-            timesShuffled = 0;
-            for (int i = 0; i < times; i++)
-            {
-                // on each loop timesShuffled will increment
-                timesShuffled++;
-                // to store our shuffled item 
-                List<Card> tempList = new List<Card>();
-
-                // shuffling is supposed to be random
-                // random class from the framework class library
-                Random random = new Random();
-
-
-                while (deck.Cards.Count > 0)
-                {
-                    // selects a random card from the index of deck
-                    int randomIndex = random.Next(0, deck.Cards.Count);
-                    // places that random card in the tempList
-                    tempList.Add(deck.Cards[randomIndex]);
-                    // removes that card from deck list
-                    // RemoveAt is a function of the List type
-                    deck.Cards.RemoveAt(randomIndex);
-                }
-                // sets the empty deck equal to the tempList
-                deck.Cards = tempList;
-            }
-            return deck;
-        }
+        
 
         //public static Deck Shuffle(Deck deck, int times)
         //{

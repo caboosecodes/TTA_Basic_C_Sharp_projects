@@ -1,0 +1,7 @@
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ClassSubmission\obj\Debug\ClassSubmission.csproj.AssemblyReference.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ClassSubmission\obj\Debug\ClassSubmission.csproj.CoreCompileInputs.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ClassSubmission\bin\Debug\ClassSubmission.exe.config
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ClassSubmission\bin\Debug\ClassSubmission.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ClassSubmission\bin\Debug\ClassSubmission.pdb
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ClassSubmission\obj\Debug\ClassSubmission.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ClassSubmission\obj\Debug\ClassSubmission.pdb
