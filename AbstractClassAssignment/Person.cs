@@ -11,7 +11,7 @@ namespace AbstractClassAssignment
     {
         // Class Properties
         public string firstName { get; set; }
-        public String lastName { get; set; }
+        public string lastName { get; set; }
 
         // Virtual Method; it can be overwritten or added onto
         public virtual void SayName()

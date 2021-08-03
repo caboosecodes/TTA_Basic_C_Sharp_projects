@@ -1,0 +1,7 @@
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AbstractClassAssignment\bin\Debug\AbstractClassAssignment.exe.config
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AbstractClassAssignment\bin\Debug\AbstractClassAssignment.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AbstractClassAssignment\bin\Debug\AbstractClassAssignment.pdb
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AbstractClassAssignment\obj\Debug\AbstractClassAssignment.csproj.AssemblyReference.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AbstractClassAssignment\obj\Debug\AbstractClassAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AbstractClassAssignment\obj\Debug\AbstractClassAssignment.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AbstractClassAssignment\obj\Debug\AbstractClassAssignment.pdb

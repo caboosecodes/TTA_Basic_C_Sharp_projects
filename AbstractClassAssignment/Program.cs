@@ -15,6 +15,17 @@ namespace AbstractClassAssignment
 
             // calling on the inherited method
             worker.SayName();
+
+            /*** Polymorphism Assignment ***/
+
+            // declare Iquittable as a new Employee object
+            IQuittable resign = new Employee() { firstName = "Billy", lastName = "Bob"};
+           
+            // Because resign is a IQuittable instance, other methods from class Employee are not available
+            
+            // calling the inherited method from the interface IQuittable
+            resign.Quit();
+            
             Console.ReadLine();
         }
     }
