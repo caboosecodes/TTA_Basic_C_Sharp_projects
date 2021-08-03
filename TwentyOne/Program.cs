@@ -22,6 +22,16 @@ namespace TwentyOne
         // if a method is being used without first creating an object of that class it must be marked as static
         static void Main(string[] args)
         {
+            //// POLYMORPHISM
+            //// one object, TwentyOneGame, can morph into a higher order object, Game.
+            //// possible because TwentyOneGame inherits from Game
+            //Game game = new TwentyOneGame();
+
+            //// Using polymorphism you would be able to create a list of games that encompass all of the games though they are technically different datatypes
+            //List<Game> games = new List<Game>();
+            //Game game = new TwentyOneGame();
+            //games.Add(game);
+
 
             //// Deck has a property called "Cards" which is a datatype List
             //// in order to assign anything to a list you must instantiate a new List
@@ -51,20 +61,26 @@ namespace TwentyOne
             //game.ListPlayers();
             //Console.ReadLine();
 
-           // // call the method
-           // deck = Shuffle(deck);
-           // //you can add the named parameter to make it more readable
-           //deck = Shuffle(deck: deck, out timesShuffled, times: 3);
+            // // call the method
+            // deck = Shuffle(deck);
+            // //you can add the named parameter to make it more readable
+            //deck = Shuffle(deck: deck, out timesShuffled, times: 3);
 
-            //instead of writing the above write:
-            deck.Shuffle(3);
+            ////instead of writing the above write:
+            //deck.Shuffle(3);
 
-            foreach (Card card in deck.Cards)
-            {
-                Console.WriteLine(card.Face + " of " + card.Suit);
-            }
-            Console.WriteLine(deck.Cards.Count);
+            //foreach (Card card in deck.Cards)
+            //{
+            //    Console.WriteLine(card.Face + " of " + card.Suit);
+            //}
+            //Console.WriteLine(deck.Cards.Count);
+            //Console.ReadLine();
+
+            TwentyOneGame game = new TwentyOneGame();
+            game.Players = new List<string> { "Jesse", "Bill", "Bob", };
+            game.ListPlayers();
             Console.ReadLine();
+
         }
 
         // want a method that takes a list of cards and shuffles them
