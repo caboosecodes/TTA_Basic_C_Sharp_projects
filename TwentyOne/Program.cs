@@ -35,6 +35,9 @@ namespace TwentyOne
             //cardOne.Face = "Queen";
             //cardOne.Suit = "Spades";
 
+            // OBJECT INITIALIZATION
+            //Card card = new Card() { Face = "Queen", Suit = "Spades" }; 
+
             //// typing every card one by one would be very tedious and very time consuming
             //// a contructor would be better
             //deck.Cards.Add(cardOne);
@@ -42,12 +45,16 @@ namespace TwentyOne
             // Deck is the datatype
             // deck is the variable
             Deck deck = new Deck();
+            //Game game = new Game();
+            //game.Players = new List<string> { "Jesse", "Bill", "Joe", };
+            //// Super Class Method: when you call a method from class you're inheriting from
+            //game.ListPlayers();
+            //Console.ReadLine();
 
-
-            // call the method
-            //deck = Shuffle(deck);
-            // you can add the named parameter to make it more readable
-            //deck = Shuffle(deck: deck, out timesShuffled, times: 3);
+           // // call the method
+           // deck = Shuffle(deck);
+           // //you can add the named parameter to make it more readable
+           //deck = Shuffle(deck: deck, out timesShuffled, times: 3);
 
             //instead of writing the above write:
             deck.Shuffle(3);
