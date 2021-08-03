@@ -13,7 +13,7 @@ namespace AbstractClassAssignment
             // Object initialization
             Employee worker = new Employee() { firstName = "Sample", lastName = "Student" };
 
-            // calling on the inherited class
+            // calling on the inherited method
             worker.SayName();
             Console.ReadLine();
         }
