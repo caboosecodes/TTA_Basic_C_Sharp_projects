@@ -52,34 +52,45 @@ namespace TwentyOne
             //// a contructor would be better
             //deck.Cards.Add(cardOne);
 
-            // Deck is the datatype
-            // deck is the variable
-            Deck deck = new Deck();
             //Game game = new Game();
             //game.Players = new List<string> { "Jesse", "Bill", "Joe", };
             //// Super Class Method: when you call a method from class you're inheriting from
             //game.ListPlayers();
             //Console.ReadLine();
 
-            // // call the method
-            // deck = Shuffle(deck);
-            // //you can add the named parameter to make it more readable
+            Game game = new TwentyOneGame();
+            // need to instantiate a list to add players to it
+            game.Players = new List<Player>();
+            // Deck is the datatype
+            // deck is the variable
+
+            Player player = new Player();
+            player.Name = "Jesse";
+            //  parameters are game and player returns a game
+            game += player;
+            game -= player;
+
+            Deck deck = new Deck();
+
+            //// call the method
+            //deck = Shuffle(deck);
+            ////you can add the named parameter to make it more readable
             //deck = Shuffle(deck: deck, out timesShuffled, times: 3);
 
-            ////instead of writing the above write:
-            //deck.Shuffle(3);
+            //instead of writing the above write:
+            deck.Shuffle(3);
 
-            //foreach (Card card in deck.Cards)
-            //{
-            //    Console.WriteLine(card.Face + " of " + card.Suit);
-            //}
-            //Console.WriteLine(deck.Cards.Count);
-            //Console.ReadLine();
-
-            TwentyOneGame game = new TwentyOneGame();
-            game.Players = new List<string> { "Jesse", "Bill", "Bob", };
-            game.ListPlayers();
+            foreach (Card card in deck.Cards)
+            {
+                Console.WriteLine(card.Face + " of " + card.Suit);
+            }
+            Console.WriteLine(deck.Cards.Count);
             Console.ReadLine();
+
+            //TwentyOneGame game = new TwentyOneGame();
+            //game.Players = new List<string> { "Jesse", "Bill", "Bob", };
+            //game.ListPlayers();
+            //Console.ReadLine();
 
         }
 

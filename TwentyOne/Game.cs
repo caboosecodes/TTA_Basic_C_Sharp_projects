@@ -15,7 +15,7 @@ namespace TwentyOne
     // the more generic you can make your code the easier it is to add features to it later
     public abstract class Game
     {
-        public List<string> Players { get; set; }
+        public List<Player> Players { get; set; }
         public string Name { get; set; }
         public string Dealer { get; set; }
         
@@ -27,12 +27,12 @@ namespace TwentyOne
 
         // Virtual Keyword (Virtual Method)
         // Virtual methods are inside abstract classes
-        // Virtual methods HAVE IMPLEMENTATION but can be overwritten
+        // Virtual methods HAVE IMPLEMENTATION but can be overwritten (rewrite or add on to it)
         public virtual void ListPlayers()
         {
-            foreach (string player in Players)
+            foreach (Player player in Players)
             {
-                Console.WriteLine(player);
+                Console.WriteLine(player.Name);
             }
         }
     }

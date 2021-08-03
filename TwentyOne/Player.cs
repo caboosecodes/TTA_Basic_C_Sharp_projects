@@ -13,5 +13,20 @@ namespace TwentyOne
         public string Name { get; set; }
         public bool isActivelyPlaying { get; set; }
 
+        // Overloading operator
+        // Game is the return type
+        // inside the parentheses are what's being added together
+        public static Game operator+ (Game game, Player player)
+        {
+            //
+            game.Players.Add(player);
+            return game;
+        }
+
+        public static Game operator- (Game game, Player player)
+        {
+            game.Players.Remove(player);
+            return game;
+        }
     }
 }
