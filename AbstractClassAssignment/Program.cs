@@ -32,7 +32,7 @@ namespace AbstractClassAssignment
 
             // instantiate 2 Employee objects
             Employee employee1 = new Employee() { Id = 1, firstName = "Bob", lastName = "Jones" };
-            Employee employee2 = new Employee() { Id = 1, firstName = "Casey", lastName = "Jones" };
+            Employee employee2 = new Employee() { Id = 2, firstName = "Casey", lastName = "Jones" };
 
             // if statement using the overloaded operator
             if (employee1 == employee2)
