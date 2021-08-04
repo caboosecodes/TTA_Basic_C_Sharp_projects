@@ -93,46 +93,29 @@ namespace AbstractClassAssignment
             }
             ***/
 
-            // Instantiate another List called lambdaList
-            List<Employee> lambdaList = new List<Employee>();
-            // lambda expression of foreach
-            employees.ForEach(delegate (Employee x)
-            {
-                if (x.firstName == "Joe")
-                {
-                    // add employee to lambdaList is their first name is "Joe"
-                    lambdaList.Add(x);
-                }
-            });
+            // Instantiate another List called lambdaList with lambda expression
+            List<Employee> lambdaList = employees.Where(x => x.firstName == "Joe").ToList();
 
-            /*** Code used to check the newList
+            //Code used to check the newList
             
-            foreach (Employee x in lambdaList)
-            {
-                Console.WriteLine(x.firstName);
-            }
+            //foreach (Employee x in lambdaList)
+            //{
+            //    Console.WriteLine(x.firstName);
+            //}
 
-            ***/
 
-            // instantiate another list
-            List<Employee> idList = new List<Employee>();
-            // same as code above but only adding employees whose id is greater than 5
-            employees.ForEach(delegate (Employee y)
-            {
-                if (y.Id > 5)
-                {
-                    idList.Add(y);
-                }
-            });
+            // instantiate another list with a lambda expression where id is greather than 5
+            List<Employee> idList = employees.Where(x => x.Id > 5).ToList();
 
-            /*** Code used to check the newList
+
+            //Code used to check the newList
             
-            foreach (Employee y in idList)
-            {
-                Console.WriteLine(y.Id);
-            }
+            //foreach (Employee y in idList)
+            //{
+            //    Console.WriteLine(y.Id);
+            //}
 
-            ***/
+            
 
             Console.ReadLine();
 
