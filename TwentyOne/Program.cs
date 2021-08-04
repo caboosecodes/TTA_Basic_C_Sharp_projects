@@ -58,17 +58,30 @@ namespace TwentyOne
             //game.ListPlayers();
             //Console.ReadLine();
 
-            Game game = new TwentyOneGame();
-            // need to instantiate a list to add players to it
-            game.Players = new List<Player>();
-            // Deck is the datatype
-            // deck is the variable
+            /*** overloading operators ***/
+            //Game game = new TwentyOneGame();
+            //// need to instantiate a list to add players to it
+            //game.Players = new List<Player>();
+            //// Deck is the datatype
+            //// deck is the variable
 
-            Player player = new Player();
-            player.Name = "Jesse";
-            //  parameters are game and player returns a game
-            game += player;
-            game -= player;
+            //Player player = new Player();
+            //player.Name = "Jesse";
+            ////  parameters are game and player returns a game
+            //game += player;
+            //game -= player;
+
+            /***
+            // enums limit the possible values you can recieve from a user
+            DaysOfTheWeek day = DaysOfTheWeek.Monday;
+            ***/
+
+            //Card card = new Card();
+            //card.Suit = Suit.Clubs;
+            //// casted Suit.Diamonds to an integer can also be written like "Convert.ToInt32(Suit.Diamonds)"
+            /// enums also have a underlying value of integer
+            //int underlyingValue = (int)Suit.Diamonds;
+            //Console.WriteLine(underlyingValue);
 
             Deck deck = new Deck();
 
@@ -91,8 +104,20 @@ namespace TwentyOne
             //game.Players = new List<string> { "Jesse", "Bill", "Bob", };
             //game.ListPlayers();
             //Console.ReadLine();
-
         }
+        
+        //// an Enum is One in a set of named constants
+        //public enum DaysOfTheWeek
+        //{
+        //    Monday,
+        //    Tuesday,
+        //    Wednesday,
+        //    Thursday,
+        //    Friday,
+        //    Saturday,
+        //    Sunday
+        //}
+
 
         // want a method that takes a list of cards and shuffles them
         // takes in a deck and returns a deck

@@ -11,6 +11,9 @@ namespace AbstractClassAssignment
     {
         // Properties
         public int Id { get; set; }
+        
+        /*** GENERIC ***/
+        //public List<T> Things { get; set; }
 
         // SayName method from abstract class Person
         public override void SayName()
@@ -27,8 +30,8 @@ namespace AbstractClassAssignment
             Console.WriteLine("{0} {1} quits!", firstName, lastName);
         }
 
-        // Overloading Operator
-        public static bool operator == (Employee employee1, Employee employee2)
+        //Overloading Operator
+        public static bool operator ==(Employee employee1, Employee employee2)
         {
             // if statement checking to see if employee1 ID is equal to employee2 ID
             if (employee1.Id.Equals(employee2.Id))
@@ -37,7 +40,7 @@ namespace AbstractClassAssignment
             }
             return false;
         }
-        
+
         // when overloading the "==" operator you must overload the "!=" operator as well
         public static bool operator !=(Employee employee1, Employee employee2)
         {

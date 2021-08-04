@@ -1,0 +1,7 @@
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ParsingEnumAssignment\bin\Debug\ParsingEnumAssignment.exe.config
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ParsingEnumAssignment\bin\Debug\ParsingEnumAssignment.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ParsingEnumAssignment\bin\Debug\ParsingEnumAssignment.pdb
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ParsingEnumAssignment\obj\Debug\ParsingEnumAssignment.csproj.AssemblyReference.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ParsingEnumAssignment\obj\Debug\ParsingEnumAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ParsingEnumAssignment\obj\Debug\ParsingEnumAssignment.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ParsingEnumAssignment\obj\Debug\ParsingEnumAssignment.pdb

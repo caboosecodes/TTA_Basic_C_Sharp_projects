@@ -13,6 +13,26 @@ namespace TwentyOne
         {
             // Cards is referring to the property of the class
             Cards = new List<Card>();
+
+            // want to loop through all 13 faces
+            for (int i = 0; i < 13; i++)
+            {
+                // for each face we loop through each suit
+                for (int j = 0; j < 4; j++)
+                {
+                    // create a new card
+                    Card card = new Card();
+                    // assign the card a face
+                    // casting an integer, i, TO Face
+                    card.Face = (Face)i;
+                    // casting an integer, j, TO Suit
+                    card.Suit = (Suit)j;
+                    Cards.Add(card);
+                }
+            }
+
+            /*** COMMENTED OUT BECAUSE OF ENUM
+
             // nested foreach loop
             // create a list of all the possible suits
             List<string> Suits = new List<string>() { "Clubs", "Hearts", "Diamonds", "Spades", };
@@ -24,18 +44,16 @@ namespace TwentyOne
 
             foreach (string face in Faces)
             {
-                foreach(string suit in Suits)
-                {
-                    // this card variable only exists inside the loop
-                    Card card = new Card();
-                    card.Suit = suit;
-                    card.Face = face;
-                    Cards.Add(card);
-                }
+                //foreach(string suit in Suits)
+                //{
+                //    // this card variable only exists inside the loop
+                //    Card card = new Card();
+                //    card.Suit = suit;
+                //    card.Face = face;
+                //    Cards.Add(card);
+                //}
             }
-
-
-
+            ***/
 
             //// this would be tedious to type over and over again
             //Cards = new List<Card>();

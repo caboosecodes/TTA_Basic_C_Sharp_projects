@@ -20,10 +20,10 @@ namespace AbstractClassAssignment
             /*** Polymorphism Assignment ***/
 
             // declare Iquittable as a new Employee object
-            IQuittable resign = new Employee() { firstName = "Billy", lastName = "Bob"};
-           
+            IQuittable resign = new Employee() { firstName = "Billy", lastName = "Bob" };
+
             // Because resign is a IQuittable instance, other methods from class Employee are not available
-            
+
             // calling the inherited method from the interface IQuittable
             resign.Quit();
 
@@ -46,10 +46,31 @@ namespace AbstractClassAssignment
                 Console.WriteLine("employee1 does not have the same Id as employee2");
             }
 
+            
 
             Console.ReadLine();
 
+            ///*** Generic parameters and generic properties ***/
 
+            //Employee<string> someThing = new Employee<string>();
+            //someThing.Things = new List<string>();
+            //string[] input = { "one", "two", "three" };
+            //someThing.Things.AddRange(input);
+
+            //foreach (string thing in someThing.Things)
+            //{
+            //    Console.WriteLine(thing);
+            //}
+
+            //Employee<int> anotherThing = new Employee<int>();
+            //anotherThing.Things = new List<int>();
+            //int[] input2 = { 1, 2, 3 };
+            //anotherThing.Things.AddRange(input2);
+
+            //foreach (int thing in anotherThing.Things)
+            //{
+            //    Console.WriteLine(thing);
+            //}
         }
     }
 }
