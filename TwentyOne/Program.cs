@@ -83,14 +83,76 @@ namespace TwentyOne
             //int underlyingValue = (int)Suit.Diamonds;
             //Console.WriteLine(underlyingValue);
 
+            /*** REFERENCE AND DATA/STRUCTS TYPES***/
+            //// every data type in c# is either reference type or a value type and each has different behaviors
+            //// a class is like a blueprint and when a class is instantiated memory is allocated and configured according to that blue print
+            //Card card1 = new Card();
+            //// when card2 was assigned to card1, no new memoery was allocated
+            //// instead card2 was given the address to card1's memory location and look here if the value is called
+            //// or change the value at this address if you want to change the value
+            //        /*** ALL CLASSES, created and pre-built, OPERATE THIS WAY IN C#, BY REFERENCE ***/
+            //// any data type that stores values by reference are reference types
+            //Card card2 = card1;
+            //card1.Face = Face.Eight;
+            //card2.Face = Face.King;
+            //Console.WriteLine(card1.Face);
+            // the trick above will not work with string datatype because strings are immutable
+
+            // Changing Card from Class to Struct will output eight instead of king because structs can't be inherited
+
+
+            /***
+            // Value Type
+            // a seperate independent instance 
+            // integers, boolean, enums and DateTime are value types
+            // if you go to the definition of integer you'll see that it is a struct
+            int number = 5;
+            // A STRUCT is the same as a class except that it is a VALUE TYPE and CAN'T BE inherited
+            // Value types and Structs can't have a value of null; null is not a value
+            ***/
+
+            /*** Lamda functions 
+            
+            // lambda functionsexpose lists to functions
+            Deck deck = new Deck();
+            // what if we wanted to find a specific card, like how many aces are in the deck?
+            // you can do it with a foreach loop
+            int counter = 0;
+            foreach (Card card in deck.Cards)
+            {
+                if (card.Face == Face.Ace)
+                {
+                    counter++;
+                }
+            }
+            Console.WriteLine(counter);
+            
+            // OR it can be written with a lambda function
+            // .Count is a lambda method/function
+            // its counting all the elements, represented by x where x.face is equal to Ace
+            Deck deck = new Deck();
+            int count = deck.Cards.Count(x => x.Face == Face.Ace);
+
+            // creates a new List with just one line of code
+            List<Card> newList = deck.Cards.Where(x => x.Face == Face.King).ToList();
+
+            List<int> numberList = new List<int>() { 1, 2, 3, 535, 342, 23 };
+            // adds 5 to each item on the list
+            int sum = numberList.Sum(x => x + 5);
+            // able to chain lambda functions
+            
+            // lambda functions are very hard to debug
+
+            Console.WriteLine(sum);
+            ***/
             Deck deck = new Deck();
 
-            //// call the method
-            //deck = Shuffle(deck);
-            ////you can add the named parameter to make it more readable
-            //deck = Shuffle(deck: deck, out timesShuffled, times: 3);
+            // call the method
+            deck = Shuffle(deck);
+            //you can add the named parameter to make it more readable
+            deck = Shuffle(deck: deck, out timesShuffled, times: 3);
 
-            //instead of writing the above write:
+            instead of writing the above write:
             deck.Shuffle(3);
 
             foreach (Card card in deck.Cards)

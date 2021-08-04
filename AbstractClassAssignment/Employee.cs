@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace AbstractClassAssignment
 {
     // Employee class inheriting from abstract Person class
-    class Employee : Person, IQuittable
+    public class Employee : Person, IQuittable
     {
         // Properties
         public int Id { get; set; }

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TwentyOne
 {
-    public class Card
+    // change Card to struct
+    public struct Card
     {
         // what properties does a playing card have?
         // set oboject properties; they don't do anything; that's what METHODS are for
