@@ -27,6 +27,12 @@ namespace TwentyOne
         // making the property public makes accessible to other parts of the program
         public Suit Suit { get; set; }
         public Face Face { get; set; }
+
+        // Custom ToString() method
+        public override string ToString()
+        {
+            return string.Format("{0} of {1}", Face, Suit);
+        }
     }
     // Enum
     // inside an enum the underlying value starts in order and start with zero

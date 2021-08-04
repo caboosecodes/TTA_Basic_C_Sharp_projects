@@ -128,6 +128,7 @@ namespace TwentyOne
             Console.WriteLine(counter);
             
             // OR it can be written with a lambda function
+
             // .Count is a lambda method/function
             // its counting all the elements, represented by x where x.face is equal to Ace
             Deck deck = new Deck();
@@ -144,22 +145,50 @@ namespace TwentyOne
             // lambda functions are very hard to debug
 
             Console.WriteLine(sum);
+
             ***/
-            Deck deck = new Deck();
 
-            // call the method
-            deck = Shuffle(deck);
-            //you can add the named parameter to make it more readable
-            deck = Shuffle(deck: deck, out timesShuffled, times: 3);
+            //Deck deck = new Deck();
 
-            instead of writing the above write:
-            deck.Shuffle(3);
+            //// call the method
+            //deck = Shuffle(deck);
+            ////you can add the named parameter to make it more readable
+            //deck = Shuffle(deck: deck, out timesShuffled, times: 3);
 
-            foreach (Card card in deck.Cards)
+            //instead of writing the above write:
+            //deck.Shuffle(3);
+
+            //foreach (Card card in deck.Cards)
+            //{
+            //    Console.WriteLine(card.Face + " of " + card.Suit);
+            //}
+            //Console.WriteLine(deck.Cards.Count);
+
+            Console.WriteLine("Welcome to the Grand Hotel and Casino. Let's start by telling me your name.");
+            string playerName = Console.ReadLine();
+            Console.WriteLine("And how much money did you bring today?");
+            int bank = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Hello, {0}. WOuld you like to join a game of 21 right now?", playerName);
+            string answer = Console.ReadLine().ToLower();
+            if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya")
             {
-                Console.WriteLine(card.Face + " of " + card.Suit);
+                // playerName and bank are the arguments passed into the constructor in class Player
+                Player player = new Player(playerName, bank);
+                // polymorphism
+                Game game = new TwentyOneGame();
+                // adding player to the game with overloaded operator
+                game += player;
+                // property of class Player
+                player.isActivelyPlaying = true;
+                // while the palyer is actively playing, and player has money, play the game
+                while (player.isActivelyPlaying && player.Balance > 0)
+                {
+                    game.Play();
+                }
+                game -= player;
+                Console.WriteLine("Thank you for playering!");
             }
-            Console.WriteLine(deck.Cards.Count);
+            Console.WriteLine("Feel free to look around the casino. Bye for now.");
             Console.ReadLine();
 
             //TwentyOneGame game = new TwentyOneGame();
