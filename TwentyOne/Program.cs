@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
 
 
 // refactoring is going over old code and making it more efficient and more readable
@@ -190,6 +185,18 @@ namespace TwentyOne
             // easy way to compare two dates and get the difference, result is in days
             TimeSpan ageAtGradiation = yearOfGraduation - yearOfBirth;
             ***/
+
+            /*** Assembly and namespaces ***/
+            // any code you write ends up getting compiled twice, either a .exe or a .dll, a .dll is a library file
+            // the .exe or .dll is essecntially an assembly then compiled to machine code
+            // an assembly is what you get after you compile the C# code
+                
+            // Namespaces is a way of organizing your code
+            // using statements make it so we don't have to type out the entire path
+            // allows you to use the same names for classes while having different namespaces
+
+            /*** Libraries ***/
+
 
 
             Console.WriteLine("Welcome to the Grand Hotel and Casino. Let's start by telling me your name.");
