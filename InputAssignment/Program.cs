@@ -12,17 +12,20 @@ namespace InputAssignment
     {
         static void Main(string[] args)
         {
+            // creates an instance of DateTime as datetime and saves present datetime
             DateTime datetime = DateTime.Now;
+            // prints datetime to console
             Console.WriteLine(datetime);
             // asks for user input
             Console.WriteLine("please input in a number");
-            // saves user input
+            // saves user input as integer
             int userNumber = Convert.ToInt32(Console.ReadLine());
 
+            // initializes TimeSpan object with the userNumber as hours
             TimeSpan hours = new TimeSpan(0, userNumber, 0, 0);
-
+            // adds hours to datetime
             DateTime hoursFromNow = datetime.Add(hours);
-            
+            // prints to the console
             Console.WriteLine("the time in {0} hours will be {1}", userNumber, hoursFromNow);
             
 
