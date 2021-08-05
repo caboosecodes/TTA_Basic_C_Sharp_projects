@@ -1,10 +1,11 @@
 ﻿using System;
+using System.IO;
+using Casino;
+using Casino.TwentyOne;
 
 
 // refactoring is going over old code and making it more efficient and more readable
 // objects are items that can be represented by a computer program
-
-
 // an analogy for the difference between a class and an object:
 // a class would be the cookie cutter and a object would be the cookie
 
@@ -12,6 +13,8 @@ namespace TwentyOne
 {
     class Program
     {
+        private static char card;
+
         // Mehtods, also called functions or routines, are little blocks of reusuable code
         // composed of an access modifier, a return type, and contain parameters or lack of parameters
         // methods have to be part of the a class
@@ -190,16 +193,31 @@ namespace TwentyOne
             // any code you write ends up getting compiled twice, either a .exe or a .dll, a .dll is a library file
             // the .exe or .dll is essecntially an assembly then compiled to machine code
             // an assembly is what you get after you compile the C# code
-                
+
             // Namespaces is a way of organizing your code
             // using statements make it so we don't have to type out the entire path
             // allows you to use the same names for classes while having different namespaces
 
-            /*** Libraries ***/
+            // Constructor chaining
+            // using the inheriting contructor
+            //Player newPlayer = new Player("Ricky");
+
+            // implicitly define the variable with var keyword
+            //var newPlayer = new Player("Ricky");
+            // the rule for using var is if the data type is obscurred in any way then use the data type otherwise you can use var
+
+            //declaring a constant
+            const string casinoName = "Grand Hotel and Casino";
+
+            /*** GUID
+            // global unique identifier (Guid)
+            // the advantage of a guid is that it makes looking people a lot easier
+            // extremely low odds of having the same Guid
+            Guid identifier = Guid.NewGuid();
+            ***/
 
 
-
-            Console.WriteLine("Welcome to the Grand Hotel and Casino. Let's start by telling me your name.");
+            Console.WriteLine("Welcome to the {0}. Let's start by telling me your name.", casinoName);
             string playerName = Console.ReadLine();
             Console.WriteLine("And how much money did you bring today?");
             int bank = Convert.ToInt32(Console.ReadLine());
@@ -209,6 +227,14 @@ namespace TwentyOne
             {
                 // playerName and bank are the arguments passed into the constructor in class Player
                 Player player = new Player(playerName, bank);
+                // GUID
+                player.Id = Guid.NewGuid();
+                // logs the guid
+                using (StreamWriter file = new StreamWriter(@"C:\Users\Ricar\Desktop\twentyoneIO\log.txt", true))
+                {
+                    // DateTime.Now gives the exact datetime object of this moment
+                    file.WriteLine(player.Id);
+                }
                 // polymorphism
                 Game game = new TwentyOneGame();
                 // adding player to the game with overloaded operator

@@ -1,0 +1,7 @@
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ChainedConstructorAssignment\bin\Debug\ChainedConstructorAssignment.exe.config
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ChainedConstructorAssignment\bin\Debug\ChainedConstructorAssignment.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ChainedConstructorAssignment\bin\Debug\ChainedConstructorAssignment.pdb
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ChainedConstructorAssignment\obj\Debug\ChainedConstructorAssignment.csproj.AssemblyReference.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ChainedConstructorAssignment\obj\Debug\ChainedConstructorAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ChainedConstructorAssignment\obj\Debug\ChainedConstructorAssignment.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\ChainedConstructorAssignment\obj\Debug\ChainedConstructorAssignment.pdb
