@@ -15,9 +15,14 @@ namespace TwentyOne
     // the more generic you can make your code the easier it is to add features to it later
     public abstract class Game
     {
-        public List<Player> Players { get; set; }
+        // you have to instantiate a list so that it is never null
+        private List<Player> _players = new List<Player>();
+        private Dictionary<Player, int> _bets = new Dictionary<Player, int>();
+        
+        // get and set is a shorthand
+        public List<Player> Players { get { return _players;  } set { _players = value; } }
         public string Name { get; set; }
-        public Dictionary<Player, int> Bets { get; set; }
+        public Dictionary<Player, int> Bets { get { return _bets; } set { _bets = value; } }
         
         // Abstract Method
         // Abstract method can only exist inside of an abstract class

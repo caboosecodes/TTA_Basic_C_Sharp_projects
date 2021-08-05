@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 
 // refactoring is going over old code and making it more efficient and more readable
@@ -163,6 +164,33 @@ namespace TwentyOne
             //    Console.WriteLine(card.Face + " of " + card.Suit);
             //}
             //Console.WriteLine(deck.Cards.Count);
+
+            /*** FILE IO 
+            
+            //string text = "here is some text";
+            //to write some text to a file
+            // takes in an argument of the path of the file
+            // if the log. txt doesn't exists then it will create it or overwrite it
+            // @ tells the program to read everything as is
+            //File.WriteAllText(@"C:\Users\Ricar\Desktop\twentyoneIO\log.txt", text);
+            
+            // reads the text file
+            //string text = File.ReadAllText(@"C:\Users\Ricar\Desktop\twentyoneIO\log.txt");
+            ***/
+
+            /*** DATETIME 
+            // Data Types DateTime and TimeSpan
+            // Datetime is a value type
+            // it is a struct so it not nullable
+            DateTime datetime = new DateTime(1995, 5, 23, 8, 32, 45);
+
+            DateTime yearOfBirth = new DateTime(1995, 5, 23, 8, 32, 45);
+            DateTime yearOfGraduation = new DateTime(2013, 6, 1, 16, 34, 22);
+
+            // easy way to compare two dates and get the difference, result is in days
+            TimeSpan ageAtGradiation = yearOfGraduation - yearOfBirth;
+            ***/
+
 
             Console.WriteLine("Welcome to the Grand Hotel and Casino. Let's start by telling me your name.");
             string playerName = Console.ReadLine();

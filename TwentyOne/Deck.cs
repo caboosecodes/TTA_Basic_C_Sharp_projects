@@ -66,6 +66,7 @@ namespace TwentyOne
         }
 
         // a deck is a collection of cards
+        //private List<Card> _card = new List<Card>();
         public List<Card> Cards { get; set; }
 
         // static allows a method without it applying to the object

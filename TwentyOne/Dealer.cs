@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace TwentyOne
 {
@@ -24,8 +25,22 @@ namespace TwentyOne
             // Deck is a property, a list of Cards
             // First is a method available to a list that grabs the first item into a list
             Hand.Add(Deck.Cards.First());
+
+            //want to log 
+            string card = string.Format(Deck.Cards.First().ToString() + "\n");
+
             // prints the card to the console
-            Console.WriteLine(Deck.Cards.First().ToString() + "\n");
+            Console.WriteLine(card);
+
+            // appends to the log
+            // true means it wants to append, false would mean create a new file
+            using (StreamWriter file = new StreamWriter(@"C:\Users\Ricar\Desktop\twentyoneIO\log.txt", true))
+            {
+                // DateTime.Now gives the exact datetime object of this moment
+                file.WriteLine(DateTime.Now);
+                file.WriteLine(card);
+            }
+
             // RemovesAt() is a method available to a list that removes a element at a given index
             Deck.Cards.RemoveAt(0);
 

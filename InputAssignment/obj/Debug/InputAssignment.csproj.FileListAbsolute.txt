@@ -1,0 +1,14 @@
+C:\Users\Ricar\source\repos\InputAssignment\bin\Debug\InputAssignment.exe.config
+C:\Users\Ricar\source\repos\InputAssignment\bin\Debug\InputAssignment.exe
+C:\Users\Ricar\source\repos\InputAssignment\bin\Debug\InputAssignment.pdb
+C:\Users\Ricar\source\repos\InputAssignment\obj\Debug\InputAssignment.csproj.AssemblyReference.cache
+C:\Users\Ricar\source\repos\InputAssignment\obj\Debug\InputAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Ricar\source\repos\InputAssignment\obj\Debug\InputAssignment.exe
+C:\Users\Ricar\source\repos\InputAssignment\obj\Debug\InputAssignment.pdb
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\InputAssignment\bin\Debug\InputAssignment.exe.config
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\InputAssignment\bin\Debug\InputAssignment.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\InputAssignment\bin\Debug\InputAssignment.pdb
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\InputAssignment\obj\Debug\InputAssignment.csproj.AssemblyReference.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\InputAssignment\obj\Debug\InputAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\InputAssignment\obj\Debug\InputAssignment.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\InputAssignment\obj\Debug\InputAssignment.pdb

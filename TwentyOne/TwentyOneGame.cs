@@ -28,6 +28,7 @@ namespace TwentyOne
             Dealer.Stay = false;
             // if a new deck wasn't created, then after one round the deck would be incomplete
             Dealer.Deck = new Deck();
+            Dealer.Deck.Shuffle();
             Console.WriteLine("Place your bet");
 
             foreach (Player player in Players) 
@@ -80,7 +81,7 @@ namespace TwentyOne
                         {
                             Dealer.Balance += entry.Value;
                         }
-
+                        return;
                     }
                 }
             }
@@ -115,10 +116,12 @@ namespace TwentyOne
                         if (answer == "yes" || answer == "yeah")
                         {
                             player.isActivelyPlaying = true;
+                            return;
                         }
                         else
                         {
                             player.isActivelyPlaying = false;
+                            return;
                         }
                     }
                 }
