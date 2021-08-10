@@ -36,8 +36,62 @@ namespace CarInsurance.Controllers
         }
 
         // GET: Insuree/Create
-        public ActionResult Create(string firstName, string lastName)
+        public ActionResult Create(string firstName, string lastName, string emailAddress, DateTime dateOfBirth, int carYear, string carMake, string carModel, bool DUI, int speedingTickets, bool coverageType, decimal quote)
         {
+            decimal rate = 50.0M;
+            
+            //DateTime now = DateTime.Today;
+            //var age = now.Year - dateOfBirth.Year;
+            //if (age < 18)
+            //{
+            //    rate += 100.0M;
+            //}
+
+            if(carYear < 2000)
+            {
+                rate += 25.0M;
+            }
+            if (carYear > 2015)
+            {
+                rate += 25.0M;
+            }
+            if (carMake.ToLower() == "porche")
+            {
+                rate += 25.0M;
+            }
+            if (carMake.ToLower() == "porche" && carModel.ToLower() == "911 Carrera")
+            {
+                rate += 25.0M;
+            }
+            if (speedingTickets > 0)
+            {
+                rate += (speedingTickets * 10);
+            }
+            if (DUI)
+            {
+                rate += (rate + (rate * .25M));
+            }
+            if (coverageType)
+            {
+                rate += (rate + (rate * .5M));
+            }
+            using(InsuranceEntities db = new InsuranceEntities())
+            {
+                var create = new Insuree();
+                create.FirstName = firstName;
+                create.LastName = firstName;
+                create.EmailAddress = emailAddress;
+                create.DateOfBirth = dateOfBirth;
+                create.CarYear = carYear;
+                create.CarMake = carMake;
+                create.CarModel = carModel;
+                create.DUI = DUI;
+                create.SpeedingTickets = speedingTickets;
+                create.CoverageType = coverageType;
+                create.Quote = rate;
+                db.Insurees.Add(create);
+                db.SaveChanges();
+            }
             return View();
         }
 
