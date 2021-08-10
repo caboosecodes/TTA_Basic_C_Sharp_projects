@@ -1,7 +1,24 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-}
+﻿@using CarInsurance.ViewModels
+@model List<InsureeVm>
 
-<h2>Index</h2>
-
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Quote</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var insuree in Model)
+    {
+      <tr>
+        <td>$ @decimal.Round(insuree.Quote, 2)</td>
+        <td>@insuree.FirstName</td>
+        <td>@insuree.LastName</td>
+        <td>@insuree.EmailAddress</td>
+      </tr>
+    }
+    </tbody>
+</table>
