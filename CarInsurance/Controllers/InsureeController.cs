@@ -75,7 +75,10 @@ namespace CarInsurance.Controllers
             {
                 rate += 50.0M;
             }
-
+            if (age > 25)
+            {
+                rate += 25.0M;
+            }
             if (insuree.CarYear < 2000)
             {
                 rate += 25.0M;
@@ -98,14 +101,14 @@ namespace CarInsurance.Controllers
             }
             if (insuree.DUI)
             {
-                rate += (rate + (rate * .25M));
+                rate += (rate * .25M);
             }
             if (insuree.CoverageType)
             {
-                rate += (rate + (rate * .5M));
+                rate += (rate * .5M);
             }
             insuree.Quote = rate;
-
+            return insuree.Quote;
 
             //using (InsuranceEntities db = new InsuranceEntities())
             //{
