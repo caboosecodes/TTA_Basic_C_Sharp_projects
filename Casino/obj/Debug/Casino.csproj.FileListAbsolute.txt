@@ -3,3 +3,4 @@ C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\Casino\bin\Debug\Casi
 C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\Casino\obj\Debug\Casino.csproj.CoreCompileInputs.cache
 C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\Casino\obj\Debug\Casino.dll
 C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\Casino\obj\Debug\Casino.pdb
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\Casino\obj\Debug\Casino.csproj.AssemblyReference.cache

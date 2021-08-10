@@ -1,0 +1,7 @@
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AdvancedTryCatchAssignment\obj\Debug\AdvancedTryCatchAssignment.csproj.AssemblyReference.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AdvancedTryCatchAssignment\obj\Debug\AdvancedTryCatchAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AdvancedTryCatchAssignment\bin\Debug\AdvancedTryCatchAssignment.exe.config
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AdvancedTryCatchAssignment\bin\Debug\AdvancedTryCatchAssignment.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AdvancedTryCatchAssignment\bin\Debug\AdvancedTryCatchAssignment.pdb
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AdvancedTryCatchAssignment\obj\Debug\AdvancedTryCatchAssignment.exe
+C:\Users\Ricar\Documents\GitHub\TTA_Basic_C_Sharp_projects\AdvancedTryCatchAssignment\obj\Debug\AdvancedTryCatchAssignment.pdb

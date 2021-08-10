@@ -30,13 +30,26 @@ namespace Casino.TwentyOne
             // if a new deck wasn't created, then after one round the deck would be incomplete
             Dealer.Deck = new Deck();
             Dealer.Deck.Shuffle();
-            Console.WriteLine("Place your bet");
+            //Console.WriteLine("Place your bet");
 
             foreach (Player player in Players) 
             {
+                bool validAnswer = false;
+                int bet = 0;
+                while (!validAnswer)
+                {
+                    Console.WriteLine("Place your bet");
+                    validAnswer = int.TryParse(Console.ReadLine(), out bet);
+                    if (!validAnswer) Console.WriteLine("Please enter digits only, no decimals.");
+                }
                 // user would enter their bet
-                int bet = Convert.ToInt32(Console.ReadLine());
+                //int bet = Convert.ToInt32(Console.ReadLine());
                 // calling on the Player Bet method
+                if (bet < 0)
+                {
+                    // FraudException from the constructor takes a message
+                    throw new FraudException("Security! Kick this person out.");
+                }
                 bool successfullyBet = player.Bet(bet);
                 // if successfullyBet is flase
                 if (!successfullyBet)

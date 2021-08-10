@@ -1,0 +1,29 @@
+﻿@*<!-- because we are using a list we need to use a using statement -->
+
+  @using System.Collections.Generic
+  @model List<string>
+
+  <!-- If we want to reference the "model", the list, we just use Model-->
+
+  @foreach (var name in Model)
+        {
+          <h1>
+            @name
+          </h1>
+        }
+*@
+
+@model MvcTutorial.Models.User
+
+<h1>
+  @Model.Id
+</h1>
+<h1>
+  @Model.FirstName
+</h1>
+<h1>
+  @Model.LastName
+</h1>
+<h1>
+  @Model.Age
+</h1>

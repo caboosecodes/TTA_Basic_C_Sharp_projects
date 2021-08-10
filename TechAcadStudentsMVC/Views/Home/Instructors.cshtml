@@ -1,0 +1,21 @@
+﻿@* adding a using statment so we can refer to the instructor class without prefixing it every time with TechAcadStudentsMvc.Models *@
+
+@using TechAcadStudentsMVC.Models
+
+@* Below any using statements, ew define our model. "@model" means there is a model and following it is its data type *@
+@model List<Instructor>
+
+
+@{
+    ViewBag.Title = "Instructors";
+}
+
+<h2>Instructors</h2>
+@* After you declare your model at the top with @model, you can reference it anywhere in the HTML with the word Model, make sure to use the @ sign again to reference more C# in the HTML tags *@
+@{ 
+    foreach(Instructor instructor in Model)
+            {
+        <h4>@instructor.FirstName</h4>
+            }
+}
+

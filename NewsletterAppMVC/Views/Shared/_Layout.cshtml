@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+      @* the @RenderBody() tag is where whatever View you are passing in from the Controller. *@
+        @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @* Rendersection let's you render a script for a specific view inside of that view *@
+    @RenderSection("scripts", required: false)
+</body>
+</html>
