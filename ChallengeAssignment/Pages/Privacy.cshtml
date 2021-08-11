@@ -1,0 +1,19 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Surprise!";
+}
+<h1>@ViewData["Title"]</h1>
+<br />
+<h2>The current date and time is @ViewData["TimeStamp"]</h2>
+<br />
+<h3>DateTime Property</h3>
+<p>DateTime is a data type object, the DateTime with the property .Now and the method .ToLocalTime is displayed above</p>
+<br />
+<h3>Event Handlers</h3>
+<p>In Razor pages, like the one you are seeing now, handler methods are executed as a result of request. The date and time
+   displayed above is using the onGet() method.</p>
+<br />
+<h3>Void Method</h3>
+<p>A void method does return any value, and can used without any datatype after the return statement. The method used
+  to display the date and time above is using a void method</p>
